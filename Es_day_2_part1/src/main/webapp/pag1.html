@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<!-- HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		
+		<style>
+			
+		</style>
+	</head>
+	
+	
+	<!-- BODY -->
+	<body>
+
+		<!-- Titolo centrato in alto  -->
+		<div class="jumbotron text-center">
+  			<h1>Esercizi JavaScript - giorno 2</h1>
+  			<p>Di seguito tutti i 23 esercizi</p>
+		</div>
+		
+		<!-- Esercizi -->
+		<div class="container">
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo</h3>
+      				<p>Elenco di tutti gli esercizi</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<h3>Risolvi!</h3>
+      				<p>Premi per risolvere l'esercizio corrispondente.</p>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 1 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 1</h3>
+      				<p>Calcola la somma di due numeri e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio1()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 2 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 2</h3>
+      				<p>Calcola la differenza tra due numeri e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio2()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 3 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 3</h3>
+      				<p>Moltiplica due numeri e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio3()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 4 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 4</h3>
+      				<p>Divide due numeri e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio4()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 5 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 5</h3>
+      				<p>Calcola il resto della divisione tra due numeri e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio5()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 6 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 6</h3>
+      				<p>Calcola la media aritmetica di un insieme di numeri e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio6()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 7 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 7</h3>
+      				<p>Verifica se un numero è pari o dispari e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio7()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 8 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 8</h3>
+      				<p>Verifica se un numero è maggiore, minore o uguale a un altro numero e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio8()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 9 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 9</h3>
+      				<p>Verifica se una stringa è vuota o meno e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio9()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 10 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 10</h3>
+      				<p>Verifica se una stringa contiene una determinata sottostringa e e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio10()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 11 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 11</h3>
+      				<p>Verifica se una lettera è una vocale o una consonante e stampa l risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio11()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 12 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 12</h3>
+      				<p>Verifica se un numero è divisibile per 3,5 o entrambi e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio12()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 13 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 13</h3>
+      				<p>Crea un array di numeri interi e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio13()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 14 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 14</h3>
+      				<p>Cerca un elemento in un array e stampa se è stato trovato o meno.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio14()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 15 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 15</h3>
+      				<p>Unisce due array in un unico array e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio15()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 16 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 16</h3>
+      				<p>Estrae un sotto-array da un array (ad esempio solo i numeri pari) e stampa il risultato a console.</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio16()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 17 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 17</h3>
+      				<p>Utilizza la funzione .filter() che prende solo gli elementi maggiori di 5 in array di 10 numeri</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio17()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 18 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 18</h3>
+      				<p>Esercizio 18</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio18()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 19 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 19</h3>
+      				<p>Esercizio 19</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio19()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 20 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 20</h3>
+      				<p>Esercizio 20</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio20()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 21 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 21</h3>
+      				<p>Esercizio 21</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio21()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 22 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 22</h3>
+      				<p>Esercizio 22</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio22()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 23 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 23</h3>
+      				<p>Esercizio 23</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio23()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 24 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 24</h3>
+      				<p>Esercizio 24</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio24()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 25 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 25</h3>
+      				<p>Esercizio 25</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio25()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 26 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 26</h3>
+      				<p>Esercizio 26</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio26()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+  			<!-- --------------------------------------------------------------------------------------- -->
+  			<!-- Esericizio 27 -->
+  			<div class="row">
+    			<div class="col-sm-6">
+      				<h3>Esericizo 27</h3>
+      				<p>Esercizio 27</p>
+    			</div>
+    			<div class="col-sm-6">
+      				<button onclick="esercizio27()">RISOLVI</button>
+    			</div>
+  			</div>
+  			
+
+		</div>
+		
+		<script src="../java/funzioni.js"></script>
+	</body>
+</html>
